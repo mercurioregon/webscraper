@@ -52,10 +52,10 @@ axios.get(website)
     let content = [];
 
     $('.1968nfl.html').each(function () {
-      const title = $(this).find('footer').attr('href');
+      const record = $(this).text()
 
       content.push({
-        title,
+        record,
       });
     });
 
